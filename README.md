@@ -1,10 +1,10 @@
 # Audio Analyzer — Sallen-Key filter design and measurement
 
 A battery-powered analog audio analyzer that splits a stereo input into two bands and drives an
-LED from each. The circuit runs entirely on op-amps and discrete parts — no microcontroller, no
-DSP — from a single 9 V cell.
+LED from each. The circuit runs entirely on op-amps and discrete parts (no microcontroller, no
+DSP) from a single 9 V cell.
 
-![Assembled board](images/board-original.jpg)
+![Assembled board](images/board_original.jpg)
 
 I designed the two filter stages that set what the analyzer actually responds to: picking the
 corner frequencies, solving the Sallen-Key equations for every resistor and capacitor, simulating
