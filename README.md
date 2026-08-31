@@ -4,7 +4,7 @@ A battery-powered analog audio analyzer that splits a stereo input into two band
 LED from each. The circuit runs entirely on op-amps and discrete parts — no microcontroller, no
 DSP — from a single 9 V cell.
 
-![Assembled board](images/board.jpg)
+![Assembled board](images/board_original.jpg)
 
 I designed the two filter stages that set what the analyzer actually responds to: picking the
 corner frequencies, solving the Sallen-Key equations for every resistor and capacitor, simulating
@@ -82,11 +82,6 @@ figures/                        response plots and the schematic as images
 images/board.jpg                assembled board
 images/board-original.jpg       the same photo, uncut
 ```
-
-## Scope
-
-Built on the ECE 2600 course PCB. The filter design, simulation, assembly, measurement, and
-analysis in this repository are mine.
 
 ## Tools
 
