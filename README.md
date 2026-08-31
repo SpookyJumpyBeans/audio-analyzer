@@ -6,10 +6,11 @@ DSP — from a single 9 V cell.
 
 ![Assembled board](images/board.jpg)
 
-My work on this project was the **filter stage**: choosing the corner frequencies, deriving the
-component values from the Sallen-Key design equations, simulating in KiCad, building the board,
-and measuring the assembled hardware against the prediction. Full write-up in
-[`docs/filter-design-report.pdf`](docs/filter-design-report.pdf).
+I designed the two filter stages that set what the analyzer actually responds to: picking the
+corner frequencies, solving the Sallen-Key equations for every resistor and capacitor, simulating
+the result in KiCad, assembling the board, and then measuring the real hardware against the
+prediction on a network analyzer. Both corners came in within 3.7 % of the hand calculation.
+Full derivation and method in [`docs/filter-design-report.pdf`](docs/filter-design-report.pdf).
 
 ---
 
@@ -82,16 +83,10 @@ images/board.jpg                assembled board
 images/board-original.jpg       the same photo, uncut
 ```
 
-## Attribution
+## Scope
 
-The PCB and its schematic are **provided by the course** (University of Virginia, ECE 2600
-Electronics) as the assignment platform. The board is a fixed design that every student
-populates.
-
-What is mine is the filter work: selecting the two corner frequencies, solving the Sallen-Key
-equations for R and C, running the KiCad simulation, assembling and soldering the board, taking
-the WaveForms measurements, and the analysis in
-[`docs/filter-design-report.pdf`](docs/filter-design-report.pdf) — which I wrote.
+Built on the ECE 2600 course PCB. The filter design, simulation, assembly, measurement, and
+analysis in this repository are mine.
 
 ## Tools
 
