@@ -1,0 +1,10 @@
+# KiCad backups and build output
+*-backups/
+*.kicad_prl
+fp-info-cache
+*.bak
+*.net
+
+# OS
+.DS_Store
+Thumbs.db
