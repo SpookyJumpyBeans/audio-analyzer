@@ -10,7 +10,7 @@ I designed the two filter stages that set what the analyzer actually responds to
 corner frequencies, solving the Sallen-Key equations for every resistor and capacitor, simulating
 the result in KiCad, assembling the board, and then measuring the real hardware against the
 prediction on a network analyzer. Both corners came in within 3.7 % of the hand calculation.
-Full derivation and method in [`docs/filter-design-report.pdf`](docs/filter-design-report.pdf).
+Full derivation and method in [`docs/report.pdf`](docs/report.pdf).
 
 ---
 
