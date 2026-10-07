@@ -1,4 +1,4 @@
-# Audio Analyzer — Sallen-Key filter design and measurement
+# Audio Analyzer: Sallen-Key filter design and measurement
 
 ![KiCad](https://img.shields.io/badge/KiCad-314CB0?logo=kicad&logoColor=white)
 ![Analog circuits](https://img.shields.io/badge/Analog-op--amp%20filters-6E6E6E)
@@ -34,7 +34,7 @@ splitter, which synthesizes the mid-supply reference the op-amps need to swing b
 single cell. The eight op-amp stages are four LMC6482 duals (U2–U5).
 
 Every block is separated by a header (J7–J14), so a stage can be unshunted and driven or probed
-on its own — that is how the filter measurements below were taken without the rest of the chain
+on its own. That is how the filter measurements below were taken without the rest of the chain
 loading the result.
 
 ## The filter stage
@@ -47,7 +47,7 @@ f_c = 1 / (2π · √(R₁R₂C₁C₂))
 ```
 
 The low-pass sits below the high-pass corner, so the two LEDs respond to genuinely different parts
-of the spectrum — bass energy on one, upper-mid on the other.
+of the spectrum: bass energy on one, upper-mid on the other.
 
 ### Results
 
@@ -66,7 +66,7 @@ sinusoid through a logarithmic sweep and its network analyzer recording the resp
 Both measured corners land within about 3.5 % of the hand calculation, and the measured curve
 tracks the simulation across the whole sweep rather than only at the corner. The residual error is
 what you would expect from 5 % passive tolerances, board parasitics, and the finite gain-bandwidth
-of the LMC6482 — the design equations assume an ideal op-amp, and the measured corner sits *above*
+of the LMC6482. The design equations assume an ideal op-amp, and the measured corner sits *above*
 theory in both cases, which is the direction component tolerance and input capacitance push it.
 
 ## Schematic
