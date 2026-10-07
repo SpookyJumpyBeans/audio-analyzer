@@ -1,5 +1,8 @@
 # Audio Analyzer — Sallen-Key filter design and measurement
 
+![KiCad](https://img.shields.io/badge/KiCad-314CB0?logo=kicad&logoColor=white)
+![Analog circuits](https://img.shields.io/badge/Analog-op--amp%20filters-6E6E6E)
+
 A battery-powered analog audio analyzer that splits a stereo input into two bands and drives an
 LED from each. The circuit runs entirely on op-amps and discrete parts (no microcontroller, no
 DSP) from a single 9 V cell.
